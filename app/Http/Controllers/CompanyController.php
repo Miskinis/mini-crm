@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\CompanyMail;
 use App\Models\Company;
 use Illuminate\Http\Request;
 use Image;
@@ -50,6 +51,8 @@ class CompanyController extends Controller
         }
 
         $company->save();
+
+        \Mail::to('your_receiver_email@gmail.com')->send(new CompanyMail($company));
 
         Session::flash('success', 'This company was successfully created.');
         return redirect()->route('companies.index')->with('success', 'Company successfully registered');

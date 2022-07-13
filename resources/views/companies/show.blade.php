@@ -69,14 +69,9 @@
             </div>
 
             <div class="col-md-8">
-                <div class="container">
-                    <div class="card">
-                        <img class="card-img-top img-responsive" src="{{asset('storage/'.$company->logo)}}" style="height: auto; max-height: 400px; width: auto; max-width: 400px"
-                             alt="{{$company->name. ' image'}}"/>
-                        <div class="card-body border-top">
-                            <h3 class="font-weight-bold text-capitalize ">{{ $company->name }}</h3>
-                        </div>
-                    </div>
+                <div class="container" style="max-width: 400px; max-height: 400px">
+                    <img class="img-responsive" src="{{asset('storage/'.$company->logo)}}" style="height: auto; width: auto;"
+                         alt="{{$company->name. ' image'}}"/>
                 </div>
             </div>
         </div>
