@@ -71,7 +71,7 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            {{ Html::linkRoute('employees.index', '<< See All Companies', array(), ['class' => 'btn btn-default btn-block btn-h1-spacing']) }}
+                            {{ Html::linkRoute('employees.index', '<< See All Employees', array(), ['class' => 'btn btn-default btn-block btn-h1-spacing']) }}
                         </div>
                     </div>
 
