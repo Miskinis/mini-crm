@@ -7,6 +7,7 @@
 ##### To run the app execute commands from inside the app folder:
 * ./vendor/bin/sail up
 * ./vendor/bin/sail artisan migrate --seed
+* npm install && npm run dev
 ###### Faker fails to generate company logos due to image server failure. All other factories work as intended.
 
 ##### Do test with command:
